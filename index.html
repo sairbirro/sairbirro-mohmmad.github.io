@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mohmmad Birro - ديكور</title>
     <style>
-        /* أنماط CSS محسنة بالكامل */
+        /* أنماط CSS محسنة مع أزرار مصغرة */
         * {
             margin: 0;
             padding: 0;
@@ -113,13 +113,13 @@
             position: absolute; 
             top: 50%; 
             transform: translateY(-50%); 
-            width: 35px; 
-            height: 35px; 
+            width: 32px; 
+            height: 32px; 
             background: rgba(58, 3, 3, 0.8); 
             color: white; 
             border: 1px solid #d4af37; 
             border-radius: 50%; 
-            font-size: 18px; 
+            font-size: 16px; 
             cursor: pointer; 
             z-index: 10; 
             display: flex; 
@@ -134,22 +134,22 @@
             box-shadow: 0 0 15px #d4af37;
         }
         
-        .slider-prev { left: 10px; }
-        .slider-next { right: 10px; }
+        .slider-prev { left: 8px; }
+        .slider-next { right: 8px; }
         
         .slider-dots { 
             position: absolute; 
-            bottom: 10px; 
+            bottom: 8px; 
             left: 50%; 
             transform: translateX(-50%); 
             display: flex; 
-            gap: 6px; 
+            gap: 5px; 
             z-index: 10; 
         }
         
         .slider-dot { 
-            width: 8px; 
-            height: 8px; 
+            width: 6px; 
+            height: 6px; 
             border-radius: 50%; 
             background: rgba(255, 255, 255, 0.4); 
             border: 1px solid #d4af37; 
@@ -169,13 +169,13 @@
         
         .slider-counter { 
             position: absolute; 
-            top: 10px; 
-            right: 10px; 
+            top: 8px; 
+            right: 8px; 
             background: linear-gradient(45deg, #3a0303, #6a0505);
             color: white; 
-            padding: 5px 15px; 
-            border-radius: 15px; 
-            font-size: 12px; 
+            padding: 4px 12px; 
+            border-radius: 12px; 
+            font-size: 11px; 
             border: 1px solid #d4af37; 
             z-index: 10;
             font-weight: bold;
@@ -184,7 +184,7 @@
         
         /* تحسين المحتوى بخلفية زجاجية */
         .content { 
-            padding: 25px 15px 20px; 
+            padding: 20px 15px 15px; 
             flex: 1; 
             display: flex; 
             flex-direction: column; 
@@ -197,19 +197,19 @@
         /* تحسين العنوان */
         .car-title {
             color: #d4af37;
-            font-size: 2.2em;
+            font-size: 2em;
             text-align: center;
-            margin-bottom: 5px;
+            margin-bottom: 3px;
             font-weight: bold;
-            text-shadow: 0 0 10px #d4af37, 2px 2px 4px black;
+            text-shadow: 0 0 8px #d4af37, 2px 2px 4px black;
             letter-spacing: 1px;
         }
         
         /* تحسين الخط الرقيق تحت العنوان */
         .sub-title {
-            font-size: 1.3em;
+            font-size: 1.1em;
             text-align: center;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
             font-family: 'Cairo', 'Segoe UI', Arial, sans-serif;
             font-weight: 300;
             background: linear-gradient(45deg, #fff, #f0e6d2);
@@ -218,31 +218,31 @@
             text-shadow: 0 2px 4px rgba(0,0,0,0.5);
         }
         
-        /* تحسين شبكة الأزرار الذهبية */
+        /* تحسين شبكة الأزرار الذهبية - أزرار أصغر */
         .gold-buttons-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            gap: 12px;
-            margin: 20px 0 15px;
-            padding: 0 5px;
+            gap: 8px;
+            margin: 15px 0 10px;
+            padding: 0 3px;
         }
         
-        /* تصميم الأزرار المحسن */
+        /* تصميم الأزرار المحسن - أصغر حجماً */
         .gold-btn {
             background: linear-gradient(145deg, #e6b422, #cf9f1f);
-            border: 2px solid #f5d742;
-            border-radius: 12px;
-            padding: 16px 5px;
+            border: 1.5px solid #f5d742;
+            border-radius: 8px;
+            padding: 10px 3px;
             color: #1f0202;
             font-weight: bold;
-            font-size: 1.1em;
+            font-size: 0.9em;
             text-align: center;
             text-decoration: none;
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 8px;
-            box-shadow: 0 6px 0 #8b6f1c, 0 8px 15px rgba(212, 175, 55, 0.5);
+            gap: 4px;
+            box-shadow: 0 3px 0 #8b6f1c, 0 4px 8px rgba(212, 175, 55, 0.4);
             transform: translateY(0);
             cursor: pointer;
             transition: all 0.15s ease;
@@ -258,7 +258,7 @@
             left: -100%;
             width: 100%;
             height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
             transition: left 0.5s ease;
         }
         
@@ -267,83 +267,83 @@
         }
         
         .gold-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 8px 0 #8b6f1c, 0 12px 20px rgba(212, 175, 55, 0.7);
+            transform: translateY(-1px);
+            box-shadow: 0 4px 0 #8b6f1c, 0 6px 12px rgba(212, 175, 55, 0.6);
         }
         
         .gold-btn:active {
-            transform: translateY(4px);
-            box-shadow: 0 2px 0 #8b6f1c, 0 5px 12px rgba(212, 175, 55, 0.5);
+            transform: translateY(2px);
+            box-shadow: 0 1px 0 #8b6f1c, 0 3px 8px rgba(212, 175, 55, 0.4);
         }
         
         /* تحسين أيقونات الأزرار */
         .btn-icon {
-            font-size: 1.4em;
-            filter: drop-shadow(0 2px 2px rgba(0,0,0,0.3));
+            font-size: 1.1em;
+            filter: drop-shadow(0 1px 1px rgba(0,0,0,0.3));
         }
         
         /* تصميم مميز للزر الرابع (قريباً) */
         .gold-btn.disabled {
             background: linear-gradient(145deg, #a09060, #7a6e48);
-            border: 2px dashed #f5d742;
+            border: 1.5px dashed #f5d742;
             opacity: 0.9;
             cursor: default;
             position: relative;
             overflow: hidden;
-            box-shadow: 0 4px 0 #5e521c, 0 6px 12px rgba(0,0,0,0.3);
+            box-shadow: 0 2px 0 #5e521c, 0 4px 8px rgba(0,0,0,0.3);
         }
         
         .gold-btn.disabled:hover {
             transform: translateY(0);
-            box-shadow: 0 4px 0 #5e521c, 0 6px 12px rgba(0,0,0,0.3);
+            box-shadow: 0 2px 0 #5e521c, 0 4px 8px rgba(0,0,0,0.3);
         }
         
         .gold-btn.disabled::after {
             content: "قريباً";
             position: absolute;
-            top: -5px;
-            left: -5px;
+            top: -4px;
+            left: -4px;
             background: #d4af37;
             color: #1f0202;
-            font-size: 0.6em;
-            padding: 2px 10px;
+            font-size: 0.5em;
+            padding: 1px 6px;
             transform: rotate(-15deg);
             font-weight: bold;
-            border-radius: 20px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+            border-radius: 12px;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.3);
         }
         
         /* تحسين نص الموقع */
         .location-text {
             background: rgba(0, 0, 0, 0.4);
-            padding: 12px;
-            border-radius: 50px;
+            padding: 8px;
+            border-radius: 40px;
             border: 1px solid #d4af37;
-            margin-top: 20px;
-            font-size: 1.2em;
+            margin-top: 15px;
+            font-size: 1em;
             color: #f0e6d2;
             text-align: center;
             font-family: 'Cairo', 'Segoe UI', Arial, sans-serif;
             font-weight: 300;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            box-shadow: 0 2px 6px rgba(0,0,0,0.3);
             backdrop-filter: blur(5px);
         }
         
         /* خط فاصل ذهبي متحرك */
         .gold-divider {
-            height: 2px;
+            height: 1px;
             background: linear-gradient(90deg, transparent, #d4af37, #f5d742, #d4af37, transparent);
-            margin: 15px 0;
+            margin: 10px 0;
             animation: shimmer 3s infinite;
         }
         
         @keyframes shimmer {
-            0% { opacity: 0.5; }
+            0% { opacity: 0.4; }
             50% { opacity: 1; }
-            100% { opacity: 0.5; }
+            100% { opacity: 0.4; }
         }
 
-        /* أنماط نافذة المعاينة (محسنة قليلاً) */
+        /* أنماط نافذة المعاينة */
         .preview-modal { 
             position: fixed; 
             top: 0; 
@@ -405,14 +405,14 @@
             color: white;
             border: 1px solid #d4af37;
             border-radius: 50%;
-            width: 40px;
-            height: 40px;
+            width: 36px;
+            height: 36px;
             display: flex;
             align-items: center;
             justify-content: center;
             cursor: pointer;
             z-index: 2001;
-            font-size: 20px;
+            font-size: 18px;
             transition: all 0.3s ease;
         }
         
@@ -424,33 +424,33 @@
         
         .preview-close { 
             position: absolute; 
-            top: 15px; 
-            right: 15px; 
+            top: 12px; 
+            right: 12px; 
         }
         
         .preview-counter { 
             position: absolute; 
-            bottom: 15px; 
+            bottom: 12px; 
             left: 50%; 
             transform: translateX(-50%); 
             background: linear-gradient(45deg, #3a0303, #6a0505);
             color: white; 
-            padding: 6px 18px; 
-            border-radius: 20px; 
-            font-size: 13px; 
+            padding: 5px 15px; 
+            border-radius: 18px; 
+            font-size: 12px; 
             border: 1px solid #d4af37; 
             z-index: 2001;
             font-weight: bold;
         }
         
-        .preview-prev { left: 15px; }
-        .preview-next { right: 15px; }
+        .preview-prev { left: 12px; }
+        .preview-next { right: 12px; }
 
         /* تحسين للشاشات الصغيرة */
         @media (max-height: 600px) { 
             .slider { height: 40vh; min-height: 240px; max-height: 300px; } 
-            .content { padding: 15px; }
-            .gold-btn { padding: 12px 5px; }
+            .content { padding: 15px 12px 12px; }
+            .gold-btn { padding: 8px 3px; font-size: 0.85em; }
         }
     </style>
 </head>
@@ -472,7 +472,7 @@
                 <!-- خط فاصل ذهبي -->
                 <div class="gold-divider"></div>
                 
-                <!-- الأزرار الذهبية الأربعة - مرتبة بشكل صحيح -->
+                <!-- الأزرار الذهبية الأربعة - مصغرة -->
                 <div class="gold-buttons-grid">
                     <!-- زر الاتصال -->
                     <a href="tel:+905551869717" class="gold-btn" target="_blank">
@@ -515,19 +515,19 @@
     </div>
 
     <script>
-        // بيانات المحتوى - تم تحديث الصور إلى 8 صور طولية لأعمال ديكورات الأسقف
+        // بيانات المحتوى - 8 صور لأعمال ديكورات الأسقف من مصادر موثوقة
         const pageData = {
             name: 'Mohmmad Birro',
             images: [
-                // 8 صور طولية (Portrait) لأعمال ديكورات الأسقف الجبسية
-                'https://i.pinimg.com/736x/2a/83/18/2a8318c1bc5c539b1e18688b07e4465b.jpg', // سقف جبس حديث مع إضاءة مخفية
-                'https://i.pinimg.com/736x/3b/1c/9a/3b1c9a5d5a5b5c5d5e5f5a5b5c5d5e5f.jpg', // سقف جبس متعدد المستويات
-                'https://i.pinimg.com/736x/4c/2d/0b/4c2d0b1c2d3e4f5a6b7c8d9e0f1a2b3c.jpg', // سقف جبس مع ثريا كريستال
-                'https://i.pinimg.com/736x/5d/3e/1c/5d3e1c2d3e4f5a6b7c8d9e0f1a2b3c4d.jpg', // ديكور سقف جبس دائري مع إضاءة LED
-                'https://i.pinimg.com/736x/6e/4f/2d/6e4f2d3e4f5a6b7c8d9e0f1a2b3c4d5e.jpg', // سقف جبس كلاسيكي مع زخارف
-                'https://i.pinimg.com/736x/7f/5a/3e/7f5a3e4f5a6b7c8d9e0f1a2b3c4d5e6f.jpg', // جبس بورد مودرن مع إضاءة خطية
-                'https://i.pinimg.com/736x/8a/6b/4f/8a6b4f5a6b7c8d9e0f1a2b3c4d5e6f7a.jpg', // سقف جبس مع مرايا وإضاءة
-                'https://i.pinimg.com/736x/9b/7c/5a/9b7c5a6b7c8d9e0f1a2b3c4d5e6f7a8b.jpg'  // سقف جبس حديث مع نجف مودرن
+                // صور من مصادر موثوقة تسمح بالعرض المباشر
+                'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=600&auto=format&fit=crop', // سقف جبس حديث
+                'https://images.unsplash.com/photo-1618221195710-dd3b95f78b33?w=600&auto=format&fit=crop', // ديكور سقف مع إضاءة
+                'https://images.unsplash.com/photo-1616048056617-93b94a339009?w=600&auto=format&fit=crop', // سقف جبس مع ثريا
+                'https://images.pexels.com/photos/276528/pexels-photo-276528.jpeg?w=600&auto=compress', // تصميم سقف مودرن
+                'https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?w=600&auto=compress', // سقف جبس مع إضاءة مخفية
+                'https://images.pexels.com/photos/2343466/pexels-photo-2343466.jpeg?w=600&auto=compress', // ديكور سقف كلاسيكي
+                'https://images.pexels.com/photos/3783471/pexels-photo-3783471.jpeg?w=600&auto=compress', // سقف جبس مع نجف
+                'https://images.pexels.com/photos/3998004/pexels-photo-3998004.jpeg?w=600&auto=compress'  // سقف جبس مودرن مع إضاءة
             ]
         };
 
@@ -732,7 +732,7 @@
         }
 
         // تشغيل التبديل التلقائي للسلايدر
-        let autoSlide = setInterval(() => nextSlide(), 3000); // زيادة الوقت قليلاً
+        let autoSlide = setInterval(() => nextSlide(), 3000);
         
         const slider = document.getElementById('slider');
         slider.addEventListener('mouseenter', () => { clearInterval(autoSlide); });
@@ -742,4 +742,4 @@
         });
     </script>
 </body>
-    </html>
+</html>
